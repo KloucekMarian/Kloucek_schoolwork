@@ -16,6 +16,7 @@ if ($amount>1){
 } else {
      echo "The $food was delicious.";
 }
+echo "<hr>";
 
 //vkladani obrazku pomoci funkce
 function img($url, $alt= null, $heit=null, $width= null){
@@ -31,6 +32,30 @@ function img($url, $alt= null, $heit=null, $width= null){
     }
     $html .= '/>';
     return $html;
+}
+
+$MarianKloucek1 = 1;
+$MarianKloucek2 = 5;
+if($MarianKloucek1==5){
+    echo "you're dump ass";
+} else {
+    echo 'Marian Kloucek';
+}
+echo "<br>";
+if($MarianKloucek2>3){
+    echo 'Marian';
+}elseif ($MarianKloucek2<3) {
+    echo 'Kloucek';
+} else {
+    echo '3';
+}
+echo "<br>";
+if($MarianKloucek1=1){
+    if($MarianKloucek2<=5){
+        echo 'Marian Kloucek';
+    }
+} else {
+    echo 'nothing';
 }
 
 ?>
