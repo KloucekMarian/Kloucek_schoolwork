@@ -57,5 +57,23 @@ if($MarianKloucek1=1){
 } else {
     echo 'nothing';
 }
+echo "<hr>";
+     
+ $student = array('Jerry' => array('Class' => '3rd', 'Credit' => 320),
+                  'Rychard' => array('Class' => '1st', 'Credit' => 140),
+                  'Danny' => array('Class' => '4th', 'Credit' => 420),
+                  'Garry' => array('Class' => '2nd', 'Credit' => 225),
+                  'Sam' => array('Class' => '2nd', 'Credit' => 278),
+                  'Rapunzel' => array('Class' => '1st', 'Credit' => 165));
 
+ echo "<table border='1'>";
+     echo "<thead><b><th>Name</th><th>Class</th><th>Credits</th></b></thead>";
+     
+     foreach ($student as $name => $info) {
+         echo "<tr><td>$name</td>";
+         foreach ($info as $type => $value) {
+                      echo "<td>$value</td>";
+     }
+         echo "</tr>";
+    }
 ?>
